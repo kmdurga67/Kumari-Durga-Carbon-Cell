@@ -80,14 +80,14 @@ const GraphPopulation = () => {
   };  
 
   const chartStyle = {
-    height: "450px",
+    height: "500px",
     width: "950px",
     margin: "0 auto", 
     backgroundColor:"black",
   };
 
   return (
-    <div style={chartStyle}>
+    <div style={chartStyle} className="graph">
       <Line ref={chartRef} data={data} options={options} />
     </div>
   );
