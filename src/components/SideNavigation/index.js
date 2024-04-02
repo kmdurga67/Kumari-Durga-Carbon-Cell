@@ -5,7 +5,7 @@ import { sideNavIcon } from "../../utils/constants";
 
 const SideNav = ({ navItems }) => {
   const [isOpen, setIsOpen] = useState(true);
-  const [activeLink, setActiveLink] = useState(null);
+  const [activeLink, setActiveLink] = useState("/home");
 
   const toggleSideNav = () => {
     setIsOpen(!isOpen);
