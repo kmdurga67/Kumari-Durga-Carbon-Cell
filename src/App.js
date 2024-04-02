@@ -10,11 +10,11 @@ function App() {
       <div>
         <SideNav navItems={sideNavItem} />
       </div>
-      <div className="flex flex-col lg:ml-40 md:ml-40 sm:ml-4 sm:mt-20">
+      <div className="flex flex-col lg:ml-0 md:ml-0 sm:ml-4 sm:mt-20">
         <div>
           <GraphPopulation />
         </div>
-        <div className="md:ml-40 lg:ml-40 flex sm:ml-4">
+        <div className="md:ml-0 lg:ml-28 flex sm:ml-4">
           <CryptoCard currency="USD" />
           <CryptoCard currency="EUR" />
           <CryptoCard currency="GBP" />
