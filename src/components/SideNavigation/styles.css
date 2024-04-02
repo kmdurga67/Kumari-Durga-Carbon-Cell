@@ -1,0 +1,39 @@
+.sidenav-container {
+  width: 250px;
+  background-color: #f0f0f0;
+  height: 100%;
+}
+
+.sidenav-header {
+  font-size: 18px;
+  padding: 20px;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.sidenav-icon {
+  float: right;
+  cursor: pointer;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-link:hover {
+  background-color: #dfd3d3;
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
