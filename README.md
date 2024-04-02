@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+Task 1: Create a Side Navigation Bar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+● Objective: Implement a side navigation bar similar to the one highlighted in
 
-## Available Scripts
+the provided image.
 
-In the project directory, you can run:
+● Requirements:
 
-### `npm start`
+○ The navigation bar should be responsive and collapse into a
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+hamburger menu on smaller screens.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+○ Include at least three navigation items.
 
-### `npm test`
+○ Highlight the active navigation item.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+● Evaluation Criteria:
 
-### `npm run build`
+○ Correct implementation of the navigation bar layout.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+○ Responsiveness on different screen sizes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+○ Proper highlighting of active navigation items.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Task 2: Graph Population Data
 
-### `npm run eject`
+● Objective: Fetch population data from the provided API
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+(https://datausa.io/api/data?drilldowns=Nation&measures=Population) and
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+create a graph.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+● Requirements:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+○ Utilize React JS and any relevant libraries (e.g., Chart.js) to create the
 
-## Learn More
+graph.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+○ Display the population data for different nations.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+○ Provide appropriate labels, legends, and axis titles for the graph.
 
-### Code Splitting
+● Evaluation Criteria:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+○ Successful retrieval and display of population data.
 
-### Analyzing the Bundle Size
+○ Accuracy and clarity of the graph representation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+○ Proper labeling and styling of the graph components.
 
-### Making a Progressive Web App
+Task 3: Display Cryptocurrency Prices
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+● Objective: Fetch cryptocurrency prices from the provided API
 
-### Advanced Configuration
+(https://api.coindesk.com/v1/bpi/currentprice.json) and display them in cards.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+● Requirements:
 
-### Deployment
+○ Fetch data asynchronously using React's lifecycle methods or hooks.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+○ Display prices of Bitcoin in multiple currencies (e.g., USD and Euro).
 
-### `npm run build` fails to minify
+○ Design visually appealing cards to showcase the cryptocurrency prices.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+● Evaluation Criteria:
+
+○ Proper integration and retrieval of cryptocurrency prices.
+○ Clear presentation of prices in the card format.
+
+○ Visual appeal and consistency in card design.
+
+Task 4: Integrate MetaMask Wallet (Optional)
+
+● Objective: Implement a feature to connect the MetaMask wallet using Web3 JS
+
+when the "Connect Wallet" button is clicked.
+
+● Requirements:
+
+○ Utilize Web3 JS library for MetaMask integration.
+
+○ Display appropriate feedback/messages for successful/unsuccessful wallet
+
+connection attempts.
+
+○ Ensure compatibility with modern browsers and MetaMask extension.
+
+● Evaluation Criteria:
+
+○ Successful integration of MetaMask wallet connection functionality.
+
+○ Proper handling of user interactions and error messages.
+
+○ Compatibility and robustness across different browser environments.
