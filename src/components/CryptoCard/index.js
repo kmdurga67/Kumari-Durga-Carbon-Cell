@@ -27,7 +27,7 @@ const CryptoCard = ({ currency }) => {
   }, [currency]);
 
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800 text-white mr-5 mt-5 p-6">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800 text-white mr-5 mt-5 p-10">
       <div>
         <h2 className="font-semibold text-lg mb-2">Bitcoin ({currency})</h2>
         {loading ? (
@@ -37,7 +37,7 @@ const CryptoCard = ({ currency }) => {
         ) : (
           <>
             <p className="text-gray-400">{currencyData[currency]?.description}</p>
-            <p className="text-xl font-bold">{price} {currencyData[currency]?.symbol.split('"').join('')}</p>
+            <p className="text-2xl font-bold">{price} {currencyData[currency]?.symbol.replace(/"/g, '')}</p>
           </>
         )}
       </div>

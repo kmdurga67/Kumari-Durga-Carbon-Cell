@@ -14,7 +14,7 @@ const GraphPopulation = () => {
       try {
         const response = await fetch(graphPopulationAPI);
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error('Error while fetching data');
         }
         const json = await response.json();
         const populationData = json?.data?.map(item => item.Population) || []; 
@@ -52,6 +52,9 @@ const GraphPopulation = () => {
       title: {
         display: true,
         text: 'Population Vs Nation',
+        font: {
+          size: 40
+      }
       },
     },
     scales: {
@@ -59,21 +62,30 @@ const GraphPopulation = () => {
         title: {
           display: true,
           text: 'Nation',
+          font: {
+            size: 30
+        }
         },
       },
       y: {
         title: {
           display: true,
           text: 'Population',
+          font: {
+            size: 30
+        }
         },
       },
     },
   };  
 
   const chartStyle = {
-    height: "400px",
-    width: "700px",
+    height: "450px",
+    width: "950px",
     margin: "0 auto", 
+    backgroundColor:"black",
+    color:"green",
+    fontSize:"30px"
   };
 
   return (
