@@ -26,9 +26,9 @@ function App() {
         </div>
         <h1 className="text-2xl font-semibold md:text-center mt-2 sm:text-left">Assets</h1>
         <div className="md:ml-0 lg:ml-4 md:flex sm:ml-4">
-          <CryptoCard currency="USD" />
-          <CryptoCard currency="EUR" />
-          <CryptoCard currency="GBP" />
+          <CryptoCard currency="USD"  symbol="$"/>
+          <CryptoCard currency="EUR" symbol="€" />
+          <CryptoCard currency="GBP" symbol="£" />
         </div>
       </div>
     </div>

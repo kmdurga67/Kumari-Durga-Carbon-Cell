@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { stockMarketAPI } from '../../utils/apis';
 
-const CryptoCard = ({ currency }) => {
+const CryptoCard = ({ currency, symbol }) => {
   const [price, setPrice] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -37,7 +37,7 @@ const CryptoCard = ({ currency }) => {
         ) : (
           <>
             <p className="text-gray-400">{currencyData[currency]?.description}</p>
-            <p className="text-2xl font-bold">{price} {currencyData[currency]?.symbol.replace(/"/g, '')}</p>
+            <p className="text-2xl font-bold">{symbol}{price}</p>
           </>
         )}
       </div>
