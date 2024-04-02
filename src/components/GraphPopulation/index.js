@@ -84,8 +84,6 @@ const GraphPopulation = () => {
     width: "950px",
     margin: "0 auto", 
     backgroundColor:"black",
-    color:"green",
-    fontSize:"30px"
   };
 
   return (
