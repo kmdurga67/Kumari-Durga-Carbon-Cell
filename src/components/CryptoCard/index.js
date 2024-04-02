@@ -37,7 +37,7 @@ const CryptoCard = ({ currency, symbol }) => {
         ) : (
           <>
             <p className="text-gray-400">{currencyData[currency]?.description}</p>
-            <p className="text-2xl font-bold">{symbol}{price}</p>
+            <p className="text-2xl font-bold">{symbol} {price}</p>
           </>
         )}
       </div>
